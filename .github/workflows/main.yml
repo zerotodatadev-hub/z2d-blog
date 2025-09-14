@@ -3,7 +3,7 @@ name: Build and Deploy Nikola
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 permissions:
