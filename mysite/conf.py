@@ -688,7 +688,7 @@ DEPLOY_COMMANDS = {"default": ["ghp-import -n -p -f output"]}
 # The name of the remote where you wish to push to, using github_deploy.
 
 # GitHub deploy configuration
-GITHUB_SOURCE_BRANCH = "master"  # your source branch (change if you use "master")
+GITHUB_SOURCE_BRANCH = "main"  # your source branch (change if you use "main")
 GITHUB_DEPLOY_BRANCH = "gh-pages"  # branch for published site
 GITHUB_REMOTE_NAME = "origin"  # usually origin unless you renamed remote
 
