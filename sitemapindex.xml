@@ -6,51 +6,19 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://z2d.io/categories/cat_data-engineering.xml</loc>
-  <lastmod>2025-09-13T20:28:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://z2d.io/categories/cat_misc.xml</loc>
-  <lastmod>2025-09-14T12:31:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://z2d.io/categories/data-engineering.xml</loc>
-  <lastmod>2025-09-13T20:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://z2d.io/categories/embeddings.xml</loc>
-  <lastmod>2025-09-13T20:28:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://z2d.io/categories/hello.xml</loc>
-  <lastmod>2025-09-14T12:31:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://z2d.io/categories/performance.xml</loc>
-  <lastmod>2025-09-13T20:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://z2d.io/categories/polars.xml</loc>
-  <lastmod>2025-09-13T20:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://z2d.io/categories/python.xml</loc>
-  <lastmod>2025-09-13T20:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://z2d.io/categories/vectorization.xml</loc>
-  <lastmod>2025-09-13T20:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://z2d.io/galleries/rss.xml</loc>
-  <lastmod>2025-09-14T12:31:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://z2d.io/rss.xml</loc>
-  <lastmod>2025-09-14T12:31:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://z2d.io/sitemap.xml</loc>
-  <lastmod>2025-09-14T12:31:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </sitemap>
 </sitemapindex>

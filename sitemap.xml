@@ -7,86 +7,30 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://z2d.io/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://z2d.io/2025/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://z2d.io/archive.html</loc>
-  <lastmod>2025-09-14T12:31:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://z2d.io/categories/</loc>
-  <lastmod>2025-09-14T12:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/categories/cat_data-engineering/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://z2d.io/categories/cat_misc/</loc>
-  <lastmod>2025-09-14T12:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/categories/data-engineering/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/categories/embeddings/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://z2d.io/categories/hello/</loc>
-  <lastmod>2025-09-14T12:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/categories/performance/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/categories/polars/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/categories/python/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/categories/vectorization/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/galleries/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/listings/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/pages/about/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/pages/contact/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/posts/another-post/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://z2d.io/posts/hello-from-z2d/</loc>
-  <lastmod>2025-09-14T12:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/posts/my-post/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
- </url>
- <url>
-  <loc>https://z2d.io/posts/polars-cosine-similarity/</loc>
-  <lastmod>2025-09-13T20:19:00Z</lastmod>
+  <lastmod>2025-09-14T12:40:00Z</lastmod>
  </url>
 </urlset>
