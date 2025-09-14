@@ -33,6 +33,6 @@ My goal is to share knowledge, best practices, and continuous learning — while
 
 * Subscribe to the RSS feed
 
-* Follow me on [Bluesky](bsky.app/profile/z2d-dev.bsky.social)
+* Follow me on [Bluesky](https://bsky.app/profile/z2d-dev.bsky.social)
 
 * And soon watch more content on [YouTube](https://www.youtube.com/@z2d_io)
