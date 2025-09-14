@@ -1,0 +1,49 @@
+# Nikola artifacts
+mysite/output/
+mysite/before_opt_output/
+mysite/cache/
+mysite/.doit.db*
+mysite/pycache/
+mysite/.webassets-cache/
+
+# Jupyter
+**/.ipynb_checkpoints/
+
+# Python
+pycache/
+*.py[cod]
+*.pyd
+*.pyo
+*.pdb
+.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.tox/
+.coverage
+.coverage.
+htmlcov/
+
+# Virtualenvs
+venv/
+.venv/
+env/
+ENV/
+nikola-env/
+.python-version
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Node/other tooling (if present)
+node_modules/
+dist/
+build/
+
+# local drafts
+posts_draft

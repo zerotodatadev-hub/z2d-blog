@@ -1,0 +1,2 @@
+Nikola[extras]==8.3.3
+ghp-import==2.1.0
