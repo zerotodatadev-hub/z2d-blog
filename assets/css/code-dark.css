@@ -1,0 +1,303 @@
+/*
+  Refactored code.css for Zero to Data (Nikola)
+  - Dark slate background, bright readable brand colors
+  - Works with Nikola’s markup: pre.code, .code .codetable, .highlight pre
+*/
+
+/* === Base === */
+pre.code,
+.code .codetable,
+.highlight pre {
+  background: #1E293B; /* slate-800 */
+  color: #E2E8F0;      /* slate-200 */
+  font-family: 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  border-left: 4px solid #14B8A6; /* teal-500 */
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.95em;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+pre.code .hll,
+.code .codetable .hll,
+.highlight pre .hll {
+  background-color: #334155; /* highlight line */
+}
+
+/* === Generic helpers === */
+pre.code .g,
+pre.code .w,
+pre.code .p,
+.highlight pre .g,
+.highlight pre .w,
+.highlight pre .p {
+  color: #E2E8F0;
+}
+
+/* === Comments === */
+pre.code .c,
+pre.code .ch,
+pre.code .cm,
+pre.code .cp,
+pre.code .cpf,
+pre.code .c1,
+pre.code .cs,
+.highlight pre .c,
+.highlight pre .ch,
+.highlight pre .cm,
+.highlight pre .cp,
+.highlight pre .cpf,
+.highlight pre .c1,
+.highlight pre .cs {
+  color: #9CA3AF; /* gray */
+  font-style: italic;
+}
+
+/* === Errors === */
+pre.code .err,
+.highlight pre .err {
+  color: #EF4444; /* red-500 */
+  background: transparent;
+}
+
+/* === Keywords === */
+pre.code .k,
+pre.code .kc,
+pre.code .kd,
+pre.code .kn,
+pre.code .kp,
+pre.code .kr,
+pre.code .kt,
+.highlight pre .k,
+.highlight pre .kc,
+.highlight pre .kd,
+.highlight pre .kn,
+.highlight pre .kp,
+.highlight pre .kr,
+.highlight pre .kt {
+  color: #2563EB; /* brand blue */
+}
+
+/* === Literals: numbers === */
+pre.code .l,
+pre.code .m,
+pre.code .mb,
+pre.code .mf,
+pre.code .mh,
+pre.code .mi,
+pre.code .mo,
+pre.code .il,
+.highlight pre .l,
+.highlight pre .m,
+.highlight pre .mb,
+.highlight pre .mf,
+.highlight pre .mh,
+.highlight pre .mi,
+.highlight pre .mo,
+.highlight pre .il {
+  color: #EAB308; /* gold */
+}
+
+/* === Literals: strings === */
+pre.code .s,
+pre.code .sa,
+pre.code .sb,
+pre.code .sc,
+pre.code .dl,
+pre.code .sd,
+pre.code .s2,
+pre.code .se,
+pre.code .sh,
+pre.code .si,
+pre.code .sx,
+pre.code .sr,
+pre.code .s1,
+pre.code .ss,
+.highlight pre .s,
+.highlight pre .sa,
+.highlight pre .sb,
+.highlight pre .sc,
+.highlight pre .dl,
+.highlight pre .sd,
+.highlight pre .s2,
+.highlight pre .se,
+.highlight pre .sh,
+.highlight pre .si,
+.highlight pre .sx,
+.highlight pre .sr,
+.highlight pre .s1,
+.highlight pre .ss {
+  color: #F97316; /* orange */
+}
+
+/* === Names (identifiers, functions, classes) === */
+pre.code .n,
+.highlight pre .n {
+  color: #E2E8F0;
+}
+
+pre.code .na,
+.highlight pre .na {
+  color: #14B8A6; /* teal */
+}
+
+pre.code .nb,
+.highlight pre .nb {
+  color: #14B8A6; /* teal for builtins */
+}
+
+pre.code .nc,
+pre.code .nd,
+pre.code .ne,
+.highlight pre .nc,
+.highlight pre .nd,
+.highlight pre .ne {
+  color: #22C55E; /* green (classes, decorators, exceptions) */
+}
+
+pre.code .nf,
+.highlight pre .nf {
+  color: #14B8A6; /* teal for functions */
+  font-weight: 600;
+}
+
+/* === Operators === */
+pre.code .o,
+.highlight pre .o {
+  color: #94A3B8; /* muted gray */
+}
+
+pre.code .ow,
+.highlight pre .ow {
+  color: #2563EB; /* blue */
+}
+
+/* === Emphasis / strong === */
+pre.code .ge,
+.highlight pre .ge {
+  font-style: italic;
+}
+
+pre.code .ges,
+.highlight pre .ges {
+  font-style: italic;
+  font-weight: 700;
+}
+
+pre.code .gs,
+.highlight pre .gs {
+  font-weight: 700;
+}
+
+/* === Diff / version control hints === */
+pre.code .gd,
+.highlight pre .gd {
+  color: #EF4444; /* red */
+}
+
+pre.code .gi,
+.highlight pre .gi {
+  color: #22C55E; /* green */
+}
+
+pre.code .go,
+.highlight pre .go {
+  color: #94A3B8; /* gray */
+}
+
+pre.code .gp,
+.highlight pre .gp {
+  color: #2563EB; /* blue */
+  font-weight: 600;
+}
+
+pre.code .gu,
+.highlight pre .gu {
+  color: #9CA3AF;
+}
+
+pre.code .gt,
+.highlight pre .gt {
+  color: #E2E8F0;
+}
+
+/* === Line numbers === */
+td.linenos .normal,
+span.linenos {
+  color: inherit;
+  background-color: transparent;
+  padding: 0 5px;
+}
+
+td.linenos .special,
+span.linenos.special {
+  color: #E2E8F0;
+  background-color: rgba(148, 163, 184, 0.25);
+  padding: 0 5px;
+}
+
+.highlight table,
+.code table {
+  border-spacing: 0;
+  border-collapse: separate;
+  padding: 0;
+}
+
+.highlight pre,
+.code pre {
+  white-space: pre-wrap;
+  line-height: normal;
+}
+
+.highlighttable td.linenos,
+.codetable td.linenos {
+  vertical-align: top;
+  padding: 0 10px 0 0;
+  user-select: none;
+}
+
+.highlighttable td.linenos code:before,
+.codetable td.linenos code:before {
+  content: attr(data-line-number);
+}
+
+.highlighttable td.code,
+.codetable td.code {
+  overflow-wrap: normal;
+  border-collapse: collapse;
+}
+
+.highlighttable td.code code,
+.codetable td.code code {
+  overflow: unset;
+  border: none;
+  padding: 0;
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: unset;
+  background: none;
+}
+
+.highlight .lineno.nonumber,
+.code .lineno.nonumber {
+  list-style: none;
+}
+
+table.codetable,
+table.highlighttable {
+  width: 100%;
+}
+
+.codetable td.linenos,
+td.linenos {
+  text-align: right;
+  width: 3.5em;
+  padding-right: 0.5em;
+  background: rgba(127, 127, 127, 0.15);
+}
+
+.codetable td.code,
+td.code {
+  padding-left: 0.5em;
+}

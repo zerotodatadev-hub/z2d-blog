@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ZERO TO DATA (Posts about hello)</title><link>https://z2d.io/</link><description></description><atom:link href="https://z2d.io/categories/hello.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:zerotodata.dev@gmail.com"&gt;Max @ Z2D&lt;/a&gt; </copyright><lastBuildDate>Sun, 14 Sep 2025 12:31:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hello from Z2D</title><link>https://z2d.io/posts/hello-from-z2d/</link><dc:creator>Max @ Z2D</dc:creator><description>&lt;h2&gt;👋 Hello from Z2D&lt;/h2&gt;
+&lt;p&gt;Welcome to &lt;strong&gt;ZERO TO DATA (Z2D)&lt;/strong&gt; — a space for developers and data enthusiasts who want to level up their skills in Python and data development.&lt;/p&gt;
+&lt;p&gt;I’m Max, a Data Scientist and Pythonista with 10+ years of coding experience and over 6 years working professionally in &lt;strong&gt;data science&lt;/strong&gt; and &lt;strong&gt;machine learning&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;What you can expect here&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Python best practices&lt;/strong&gt; — writing clean, pythonic, and maintainable code.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Data science &amp;amp; engineering&lt;/strong&gt; — from modern tabular frameworks to graph ML and language models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Practical tips&lt;/strong&gt; — iterating fast, testing code, and deploying ML models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Professional workflows&lt;/strong&gt; — IDE configuration, debugging, CI/CD, and modern development practices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Why I write this blog&lt;/h3&gt;
+&lt;p&gt;My goal is to share knowledge, best practices, and continuous learning — while building a community of people passionate about Python and data.&lt;/p&gt;
+&lt;h3&gt;Stay connected&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Subscribe to the RSS feed&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Follow me on &lt;a href="https://z2d.io/posts/hello-from-z2d/bsky.app/profile/z2d-dev.bsky.social"&gt;Bluesky&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;And soon watch more content on &lt;a href="https://www.youtube.com/@z2d_io"&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><category>hello</category><guid>https://z2d.io/posts/hello-from-z2d/</guid><pubDate>Sun, 14 Sep 2025 11:53:18 GMT</pubDate></item></channel></rss>

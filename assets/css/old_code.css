@@ -1,0 +1,548 @@
+/*
+  Custom code.css for Zero to Data (Nikola)
+  - Dark slate background, bright readable colors
+  - Works with Nikola’s markup: pre.code, .code .codetable, .highlight pre
+  - Mirrors selector structure of the stock code.css for broad token coverage
+*/
+
+/* Base and highlight line */
+pre.code .hll,
+.code .codetable .hll,
+.highlight pre .hll {
+  background-color: #334155;
+}
+
+pre.code,
+.code .codetable,
+.highlight pre {
+  background: #1E293B;
+  /* slate-800 */
+  color: #E2E8F0;
+  /* slate-200 */
+  font-family: 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  border-left: 4px solid #14B8A6;
+  /* teal-500 */
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.95em;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+/* Generic helpers */
+pre.code .g,
+.code .codetable .g,
+.highlight pre .g {
+  color: #E2E8F0;
+}
+
+pre.code .w,
+.code .codetable .w,
+.highlight pre .w {
+  color: #E2E8F0;
+}
+
+pre.code .p,
+.code .codetable .p,
+.highlight pre .p {
+  color: #E2E8F0;
+}
+
+/* Comments */
+pre.code .c,
+.code .codetable .c,
+.highlight pre .c {
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+pre.code .ch,
+.code .codetable .ch,
+.highlight pre .ch {
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+pre.code .cm,
+.code .codetable .cm,
+.highlight pre .cm {
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+pre.code .cp,
+.code .codetable .cp,
+.highlight pre .cp {
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+pre.code .cpf,
+.code .codetable .cpf,
+.highlight pre .cpf {
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+pre.code .c1,
+.code .codetable .c1,
+.highlight pre .c1 {
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+pre.code .cs,
+.code .codetable .cs,
+.highlight pre .cs {
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+/* Errors */
+pre.code .err,
+.code .codetable .err,
+.highlight pre .err {
+  color: #EF4444;
+  background: transparent;
+}
+
+/* Keywords */
+pre.code .k,
+.code .codetable .k,
+.highlight pre .k {
+  color: #2563EB;
+}
+
+pre.code .kc,
+.code .codetable .kc,
+.highlight pre .kc {
+  color: #2563EB;
+}
+
+pre.code .kd,
+.code .codetable .kd,
+.highlight pre .kd {
+  color: #2563EB;
+}
+
+pre.code .kn,
+.code .codetable .kn,
+.highlight pre .kn {
+  color: #2563EB;
+}
+
+pre.code .kp,
+.code .codetable .kp,
+.highlight pre .kp {
+  color: #2563EB;
+}
+
+pre.code .kr,
+.code .codetable .kr,
+.highlight pre .kr {
+  color: #2563EB;
+}
+
+pre.code .kt,
+.code .codetable .kt,
+.highlight pre .kt {
+  color: #2563EB;
+}
+
+/* Literals: strings and numbers */
+pre.code .l,
+.code .codetable .l,
+.highlight pre .l {
+  color: #EAB308;
+}
+
+pre.code .m,
+.code .codetable .m,
+.highlight pre .m {
+  color: #EAB308;
+}
+
+pre.code .mb,
+.code .codetable .mb,
+.highlight pre .mb {
+  color: #EAB308;
+}
+
+pre.code .mf,
+.code .codetable .mf,
+.highlight pre .mf {
+  color: #EAB308;
+}
+
+pre.code .mh,
+.code .codetable .mh,
+.highlight pre .mh {
+  color: #EAB308;
+}
+
+pre.code .mi,
+.code .codetable .mi,
+.highlight pre .mi {
+  color: #EAB308;
+}
+
+pre.code .mo,
+.code .codetable .mo,
+.highlight pre .mo {
+  color: #EAB308;
+}
+
+pre.code .il,
+.code .codetable .il,
+.highlight pre .il {
+  color: #EAB308;
+}
+
+pre.code .s,
+.code .codetable .s,
+.highlight pre .s {
+  color: #F97316;
+}
+
+pre.code .sa,
+.code .codetable .sa,
+.highlight pre .sa {
+  color: #F97316;
+}
+
+pre.code .sb,
+.code .codetable .sb,
+.highlight pre .sb {
+  color: #F97316;
+}
+
+pre.code .sc,
+.code .codetable .sc,
+.highlight pre .sc {
+  color: #F97316;
+}
+
+pre.code .dl,
+.code .codetable .dl,
+.highlight pre .dl {
+  color: #F97316;
+}
+
+pre.code .sd,
+.code .codetable .sd,
+.highlight pre .sd {
+  color: #F97316;
+}
+
+pre.code .s2,
+.code .codetable .s2,
+.highlight pre .s2 {
+  color: #F97316;
+}
+
+pre.code .se,
+.code .codetable .se,
+.highlight pre .se {
+  color: #F97316;
+}
+
+pre.code .sh,
+.code .codetable .sh,
+.highlight pre .sh {
+  color: #F97316;
+}
+
+pre.code .si,
+.code .codetable .si,
+.highlight pre .si {
+  color: #F97316;
+}
+
+pre.code .sx,
+.code .codetable .sx,
+.highlight pre .sx {
+  color: #F97316;
+}
+
+pre.code .sr,
+.code .codetable .sr,
+.highlight pre .sr {
+  color: #F97316;
+}
+
+pre.code .s1,
+.code .codetable .s1,
+.highlight pre .s1 {
+  color: #F97316;
+}
+
+pre.code .ss,
+.code .codetable .ss,
+.highlight pre .ss {
+  color: #F97316;
+}
+
+/* Names */
+pre.code .n,
+.code .codetable .n,
+.highlight pre .n {
+  color: #E2E8F0;
+}
+
+pre.code .na,
+.code .codetable .na,
+.highlight pre .na {
+  color: #14B8A6;
+}
+
+pre.code .nb,
+.code .codetable .nb,
+.highlight pre .nb {
+  color: #EAB308;
+}
+
+pre.code .nc,
+.code .codetable .nc,
+.highlight pre .nc {
+  color: #22C55E;
+}
+
+pre.code .no,
+.code .codetable .no,
+.highlight pre .no {
+  color: #EAB308;
+}
+
+pre.code .nd,
+.code .codetable .nd,
+.highlight pre .nd {
+  color: #22C55E;
+}
+
+pre.code .ni,
+.code .codetable .ni,
+.highlight pre .ni {
+  color: #E2E8F0;
+}
+
+pre.code .ne,
+.code .codetable .ne,
+.highlight pre .ne {
+  color: #22C55E;
+}
+
+pre.code .nf,
+.code .codetable .nf,
+.highlight pre .nf {
+  color: #14B8A6;
+}
+
+pre.code .nl,
+.code .codetable .nl,
+.highlight pre .nl {
+  color: #E2E8F0;
+}
+
+pre.code .nn,
+.code .codetable .nn,
+.highlight pre .nn {
+  color: #E2E8F0;
+}
+
+pre.code .nx,
+.code .codetable .nx,
+.highlight pre .nx {
+  color: #E2E8F0;
+}
+
+pre.code .py,
+.code .codetable .py,
+.highlight pre .py {
+  color: #E2E8F0;
+}
+
+pre.code .nt,
+.code .codetable .nt,
+.highlight pre .nt {
+  color: #2563EB;
+}
+
+pre.code .nv,
+.code .codetable .nv,
+.highlight pre .nv {
+  color: #E2E8F0;
+}
+
+/* Operators */
+pre.code .o,
+.code .codetable .o,
+.highlight pre .o {
+  color: #94A3B8;
+}
+
+pre.code .ow,
+.code .codetable .ow,
+.highlight pre .ow {
+  color: #2563EB;
+}
+
+/* Emphasis/strong (generic) */
+pre.code .ge,
+.code .codetable .ge,
+.highlight pre .ge {
+  color: #E2E8F0;
+  font-style: italic;
+}
+
+pre.code .ges,
+.code .codetable .ges,
+.highlight pre .ges {
+  color: #E2E8F0;
+  font-weight: 700;
+  font-style: italic;
+}
+
+pre.code .gs,
+.code .codetable .gs,
+.highlight pre .gs {
+  color: #E2E8F0;
+  font-weight: 700;
+}
+
+/* Diff-ish helpers */
+pre.code .gd,
+.code .codetable .gd,
+.highlight pre .gd {
+  color: #EF4444;
+}
+
+pre.code .gi,
+.code .codetable .gi,
+.highlight pre .gi {
+  color: #22C55E;
+}
+
+pre.code .go,
+.code .codetable .go,
+.highlight pre .go {
+  color: #94A3B8;
+}
+
+pre.code .gp,
+.code .codetable .gp,
+.highlight pre .gp {
+  color: #2563EB;
+  font-weight: 600;
+}
+
+pre.code .gu,
+.code .codetable .gu,
+.highlight pre .gu {
+  color: #9CA3AF;
+}
+
+pre.code .gt,
+.code .codetable .gt,
+.highlight pre .gt {
+  color: #E2E8F0;
+}
+
+/* Tables/line numbers — copied from Nikola default with palette tweaks */
+td.linenos .normal {
+  color: inherit;
+  background-color: transparent;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+span.linenos {
+  color: inherit;
+  background-color: transparent;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+td.linenos .special {
+  color: #E2E8F0;
+  background-color: rgba(148, 163, 184, 0.25);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+span.linenos.special {
+  color: #E2E8F0;
+  background-color: rgba(148, 163, 184, 0.25);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.highlight table,
+.highlight tr,
+.highlight td,
+.code table,
+.code tr,
+.code td {
+  border-spacing: 0;
+  border-collapse: separate;
+  padding: 0;
+}
+
+.highlight pre,
+.code pre {
+  white-space: pre-wrap;
+  line-height: normal;
+}
+
+.highlighttable td.linenos,
+.codetable td.linenos {
+  vertical-align: top;
+  padding-left: 10px;
+  padding-right: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.highlighttable td.linenos code:before,
+.codetable td.linenos code:before {
+  content: attr(data-line-number);
+}
+
+.highlighttable td.code,
+.codetable td.code {
+  overflow-wrap: normal;
+  border-collapse: collapse;
+}
+
+.highlighttable td.code code,
+.codetable td.code code {
+  overflow: unset;
+  border: none;
+  padding: 0;
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: unset;
+  background: none;
+}
+
+.highlight .lineno.nonumber,
+.code .lineno.nonumber {
+  list-style: none;
+}
+
+table.codetable,
+table.highlighttable {
+  width: 100%;
+}
+
+.codetable td.linenos,
+td.linenos {
+  text-align: right;
+  width: 3.5em;
+  padding-right: 0.5em;
+  background: rgba(127, 127, 127, 0.15);
+}
+
+.codetable td.code,
+td.code {
+  padding-left: 0.5em;
+}

@@ -1,0 +1,4 @@
+Sitemap: https://z2d.io/sitemapindex.xml
+
+User-Agent: *
+Host: z2d.io

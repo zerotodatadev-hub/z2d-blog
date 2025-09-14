@@ -1,0 +1,274 @@
+/* code-light.css for Zero to Data (Nikola) - Light gray background, brand-aligned colors - Fixed punctuation/brackets visibility */
+/* === Base === */
+pre.code,
+.code .codetable,
+.highlight pre {
+  background: #F8FAFC;
+  /* light neutral */
+  color: #1E293B;
+  /* slate-800 text */
+  font-family: 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  border-left: 4px solid #14B8A6;
+  /* teal-500 accent */
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.95em;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+pre.code .hll,
+.code .codetable .hll,
+.highlight pre .hll {
+  background-color: #E2E8F0;
+  /* highlight line */
+}
+
+/* === Comments === */
+pre.code .c,
+pre.code .ch,
+pre.code .cm,
+pre.code .cp,
+pre.code .cpf,
+pre.code .c1,
+pre.code .cs,
+.highlight pre .c,
+.highlight pre .ch,
+.highlight pre .cm,
+.highlight pre .cp,
+.highlight pre .cpf,
+.highlight pre .c1,
+.highlight pre .cs {
+  color: #64748B;
+  /* slate-500 */
+  font-style: italic;
+}
+
+/* === Errors === */
+pre.code .err,
+.highlight pre .err {
+  color: #DC2626;
+  /* red-600 */
+  background: transparent;
+}
+
+/* === Keywords === */
+pre.code .k,
+pre.code .kc,
+pre.code .kd,
+pre.code .kn,
+pre.code .kp,
+pre.code .kr,
+pre.code .kt,
+.highlight pre .k,
+.highlight pre .kc,
+.highlight pre .kd,
+.highlight pre .kn,
+.highlight pre .kp,
+.highlight pre .kr,
+.highlight pre .kt {
+  color: #2563EB;
+  /* brand blue */
+  font-weight: 600;
+}
+
+/* === Literals: numbers === */
+pre.code .l,
+pre.code .m,
+pre.code .mb,
+pre.code .mf,
+pre.code .mh,
+pre.code .mi,
+pre.code .mo,
+pre.code .il,
+.highlight pre .l,
+.highlight pre .m,
+.highlight pre .mb,
+.highlight pre .mf,
+.highlight pre .mh,
+.highlight pre .mi,
+.highlight pre .mo,
+.highlight pre .il {
+  color: #EAB308;
+  /* gold */
+}
+
+/* === Literals: strings === */
+pre.code .s,
+pre.code .sa,
+pre.code .sb,
+pre.code .sc,
+pre.code .dl,
+pre.code .sd,
+pre.code .s2,
+pre.code .se,
+pre.code .sh,
+pre.code .si,
+pre.code .sx,
+pre.code .sr,
+pre.code .s1,
+pre.code .ss,
+.highlight pre .s,
+.highlight pre .sa,
+.highlight pre .sb,
+.highlight pre .sc,
+.highlight pre .dl,
+.highlight pre .sd,
+.highlight pre .s2,
+.highlight pre .se,
+.highlight pre .sh,
+.highlight pre .si,
+.highlight pre .sx,
+.highlight pre .sr,
+.highlight pre .s1,
+.highlight pre .ss {
+  color: #F97316;
+  /* orange */
+}
+
+/* === Names (identifiers, functions, classes) === */
+pre.code .n,
+.highlight pre .n {
+  color: #1E293B;
+  /* dark neutral */
+}
+
+pre.code .na,
+.highlight pre .na {
+  color: #14B8A6;
+  /* teal */
+}
+
+pre.code .nb,
+.highlight pre .nb {
+  color: #14B8A6;
+  /* teal for builtins */
+}
+
+pre.code .nc,
+pre.code .nd,
+pre.code .ne,
+.highlight pre .nc,
+.highlight pre .nd,
+.highlight pre .ne {
+  color: #22C55E;
+  /* green for classes/decorators/exceptions */
+}
+
+pre.code .nf,
+.highlight pre .nf {
+  color: #14B8A6;
+  /* teal for functions */
+  font-weight: 600;
+}
+
+/* === Operators & Punctuation === */
+pre.code .o,
+.highlight pre .o {
+  color: #2563EB;
+  /* brand blue */
+  font-weight: 600;
+}
+
+pre.code .ow,
+.highlight pre .ow {
+  color: #2563EB;
+  /* brand blue */
+  font-weight: 600;
+}
+
+pre.code .p,
+.highlight pre .p {
+  color: #1E293B;
+  /* strong dark neutral */
+}
+
+/* === Diff / version control hints === */
+pre.code .gd,
+.highlight pre .gd {
+  color: #DC2626;
+  /* red */
+}
+
+pre.code .gi,
+.highlight pre .gi {
+  color: #22C55E;
+  /* green */
+}
+
+pre.code .go,
+.highlight pre .go {
+  color: #64748B;
+  /* gray */
+}
+
+pre.code .gp,
+.highlight pre .gp {
+  color: #2563EB;
+  /* blue */
+  font-weight: 600;
+}
+
+/* === Line numbers === */
+td.linenos,
+.codetable td.linenos {
+  text-align: right;
+  width: 3.5em;
+  padding-right: 0.5em;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+/* ================================
+
+   Tone separation overrides (append)
+   ================================ */
+
+/* Structural keywords stand out from control/logic */
+pre.code .kd,
+.highlight pre .kd {
+  color: #1E40AF;
+  /* darker blue */
+  font-weight: 700;
+}
+
+/* Operator words keep brand blue; symbol operators go neutral */
+pre.code .ow,
+.highlight pre .ow {
+  color: #2563EB;
+  /* and, or, is, not */
+  font-weight: 600;
+}
+
+pre.code .o,
+.highlight pre .o {
+  color: #334155;
+  /* + - * / = etc., neutral slate */
+  font-weight: 600;
+}
+
+/* Teal family – nuanced */
+pre.code .nf,
+.highlight pre .nf {
+  color: #0D9488;
+  /* function names – darker teal */
+  font-weight: 600;
+}
+
+pre.code .nb,
+.highlight pre .nb {
+  color: #14B8A6;
+  /* builtins – mid teal */
+}
+
+pre.code .na,
+.highlight pre .na {
+  color: #2DD4BF;
+  /* attributes – light teal */
+}
+
+/* Keep brackets/punctuation clearly visible (reinforce) */
+pre.code .p,
+.highlight pre .p {
+  color: #1E293B;
+  /* strong dark neutral */
+}

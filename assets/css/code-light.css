@@ -1,0 +1,238 @@
+/*
+  code-light.css for Zero to Data (Nikola)
+  - Light gray background, brand-aligned colors
+  - Improved tone separation for blue and teal families
+*/
+
+/* === Base === */
+pre.code,
+.code .codetable,
+.highlight pre {
+  background: #F8FAFC; /* light neutral */
+  color: #1E293B;      /* slate-800 text */
+  font-family: 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  border-left: 4px solid #14B8A6; /* teal-500 accent */
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.95em;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+pre.code .hll,
+.code .codetable .hll,
+.highlight pre .hll {
+  background-color: #E2E8F0; /* highlight line */
+}
+
+/* === Comments === */
+pre.code .c,
+pre.code .ch,
+pre.code .cm,
+pre.code .cp,
+pre.code .cpf,
+pre.code .c1,
+pre.code .cs,
+.highlight pre .c,
+.highlight pre .ch,
+.highlight pre .cm,
+.highlight pre .cp,
+.highlight pre .cpf,
+.highlight pre .c1,
+.highlight pre .cs {
+  color: #64748B; /* slate-500 */
+  font-style: italic;
+}
+
+/* === Errors === */
+pre.code .err,
+.highlight pre .err {
+  color: #DC2626; /* red-600 */
+  background: transparent;
+}
+
+/* === Keywords === */
+/* General control/logic keywords */
+pre.code .k,
+pre.code .kc,
+pre.code .kn,
+pre.code .kp,
+pre.code .kr,
+pre.code .kt,
+.highlight pre .k,
+.highlight pre .kc,
+.highlight pre .kn,
+.highlight pre .kp,
+.highlight pre .kr,
+.highlight pre .kt {
+  color: #2563EB; /* brand blue */
+  font-weight: 600;
+}
+
+/* Structural keywords (def, class) */
+/* pre.code .kd,
+.highlight pre .kd {
+  color: #1E40AF; 
+  font-weight: 700;
+} */
+/* pre.code .kd,
+.highlight pre .kd {
+  color: #7C3AED; 
+  font-weight: 700;
+}
+.highlight pre .k {
+  color: #7C3AED;  
+  font-weight: 700;
+} */
+
+/* // def, class, return, if, for… */
+pre.code .k, .highlight pre .k { color: #7C3AED; font-weight: 700; } 
+/* // import, from */
+pre.code .kn, .highlight pre .kn { color: #7C3AED; } 
+/* // True, False, None */
+pre.code .kc, .highlight pre .kc { color: #0EA5E9; } 
+/* // and, or, is, not */
+pre.code .ow, .highlight pre .ow { color: #2563EB; font-weight: 600; } 
+
+/* === Literals: numbers === */
+pre.code .l,
+pre.code .m,
+pre.code .mb,
+pre.code .mf,
+pre.code .mh,
+pre.code .mi,
+pre.code .mo,
+pre.code .il,
+.highlight pre .l,
+.highlight pre .m,
+.highlight pre .mb,
+.highlight pre .mf,
+.highlight pre .mh,
+.highlight pre .mi,
+.highlight pre .mo,
+.highlight pre .il {
+  color: #EAB308; /* gold */
+}
+
+/* === Literals: strings === */
+pre.code .s,
+pre.code .sa,
+pre.code .sb,
+pre.code .sc,
+pre.code .dl,
+pre.code .sd,
+pre.code .s2,
+pre.code .se,
+pre.code .sh,
+pre.code .si,
+pre.code .sx,
+pre.code .sr,
+pre.code .s1,
+pre.code .ss,
+.highlight pre .s,
+.highlight pre .sa,
+.highlight pre .sb,
+.highlight pre .sc,
+.highlight pre .dl,
+.highlight pre .sd,
+.highlight pre .s2,
+.highlight pre .se,
+.highlight pre .sh,
+.highlight pre .si,
+.highlight pre .sx,
+.highlight pre .sr,
+.highlight pre .s1,
+.highlight pre .ss {
+  color: #F97316; /* orange */
+}
+
+/* === Names (identifiers, functions, classes) === */
+pre.code .n,
+.highlight pre .n {
+  color: #1E293B; /* dark neutral */
+}
+
+pre.code .na,
+.highlight pre .na {
+  color: #2DD4BF; /* attributes – light aqua */
+}
+
+pre.code .nb,
+.highlight pre .nb {
+  color: #14B8A6; /* builtins – mid teal */
+}
+
+pre.code .nc,
+pre.code .nd,
+pre.code .ne,
+.highlight pre .nc,
+.highlight pre .nd,
+.highlight pre .ne {
+  color: #22C55E; /* green for classes/decorators/exceptions */
+}
+
+pre.code .nf,
+.highlight pre .nf {
+  color: #0D9488; /* functions – darker teal */
+  font-weight: 600;
+}
+
+/* === Operators & Punctuation === */
+pre.code .o,
+.highlight pre .o {
+  color: #475569; /* symbol operators neutral slate */
+  font-weight: 600;
+}
+
+pre.code .ow,
+.highlight pre .ow {
+  color: #2563EB; /* operator words (and, or, is, not) */
+  font-weight: 600;
+}
+
+pre.code .p,
+.highlight pre .p {
+  color: #1E293B; /* punctuation strong neutral */
+}
+
+/* === Diff / version control hints === */
+pre.code .gd,
+.highlight pre .gd {
+  color: #DC2626; /* red */
+}
+
+pre.code .gi,
+.highlight pre .gi {
+  color: #22C55E; /* green */
+}
+
+pre.code .go,
+.highlight pre .go {
+  color: #64748B; /* gray */
+}
+
+pre.code .gp,
+.highlight pre .gp {
+  color: #2563EB; /* blue */
+  font-weight: 600;
+}
+
+/* === Line numbers === */
+td.linenos,
+.codetable td.linenos {
+  text-align: right;
+  width: 3.5em;
+  padding-right: 0.5em;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+
+/* Prevent code wrapping, enable horizontal scroll */
+pre.code,
+.code .codetable,
+.highlight pre {
+  white-space: pre;        /* preserve spacing, no wrapping */
+  overflow-x: auto;        /* allow horizontal scroll */
+  overflow-y: hidden;      /* hide vertical scrollbars */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
