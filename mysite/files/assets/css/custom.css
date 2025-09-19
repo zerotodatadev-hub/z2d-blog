@@ -28,15 +28,19 @@ article + article {
 
 
 /* Global Styles */
-body {
+html, body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #FFFFFF, #CBD5E1); /* brand gradient */
-  color: #111827; /* dark neutral */
+  background: #E2E8F0;  /* lighter gray, brand-consistent */
+  color: #111827;       /* dark neutral */
   line-height: 1.7;
   font-size: 16px;
   margin: 0;
   padding: 0;
+  height: 100%;         /* make sure full page fills bg */
 }
+
+
+
 
 /* Header section separation */
 header {
@@ -99,24 +103,27 @@ a:hover {
 }
 
 /* Navigation */
-
-/* Navigation */
-.navbar {
-  margin-top: 0.5em;
-  margin-bottom: 1em;       /* tighten whitespace */
-  font-weight: 600;
-  color: #475569;           /* slate-600 for softer look */
+.navbar,
+.navbar-default {
+  background-color: #E2E8F0 !important;  /* same as page background */
+  border: none !important;              /* removes default Bootstrap line */
+  box-shadow: none !important;          /* removes drop shadows */
+}
+.navbar a {
+  color: #334155;       /* slate-700 for default links */
+  text-decoration: none;
 }
 .navbar a:hover {
-  color: #2563EB;
+  color: #2563EB;       /* brand blue */
 }
+
 
 /* Inline Code */
 code {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.95em;
   color: #14B8A6; 
-  background-color: #F1F5F9; 
+  background-color: #F8FAFC; 
   padding: 2px 4px;
   border-radius: 4px;
 }
