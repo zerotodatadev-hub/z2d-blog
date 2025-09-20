@@ -128,22 +128,63 @@ code {
   border-radius: 4px;
 }
 
-/* Blockquotes */
+/* Blockquotes & Admonitions */
+.admonition,
 blockquote {
   background: rgba(37, 99, 235, 0.05); /* faint brand blue */
-  border-left: 3px solid #2563EB;
+  border-left: 3px solid #2563EB;      /* brand blue border */
   padding: 14px 18px;
   margin: 28px 0;
   color: #1E293B;
   font-style: normal;
   border-radius: 6px;
+
+  font-size: 1em !important;           /* match body exactly */
+  line-height: 1.6;
 }
-blockquote strong {
-  color: #F97316; /* orange for emphasis */
+
+/* Reset inner paragraphs and list items */
+.admonition p,
+.admonition li,
+blockquote p,
+blockquote li {
+  font-size: 1em !important;
+  line-height: 1.6;
+  margin: 0.4em 0;
 }
-blockquote em {
-  color: #14B8A6; /* teal for softer highlight */
+/* Tighten list spacing inside admonitions/quotes */
+.admonition ul,
+blockquote ul {
+  margin: 0.2em 0 0.2em 1.2em; /* top/bottom space reduced */
+  padding-left: 1.2em;         /* keep bullet indentation */
 }
+
+.admonition li,
+blockquote li {
+  margin: 0.15em 0;             /* smaller gap between list items */
+  line-height: 1.5;            /* slightly more compact */
+}
+/* Admonition title (e.g. TL;DR) */
+.admonition-title {
+  font-size: 0.95em;                   /* slightly smaller */
+  font-weight: 600;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+  color: #F97316;                      /* orange for emphasis */
+}
+
+/* Highlights inside blockquotes/admonitions */
+blockquote strong,
+.admonition strong {
+  color: #F97316;                      /* orange for strong emphasis */
+}
+
+blockquote em,
+.admonition em {
+  color: #14B8A6;                      /* teal for softer highlight */
+}
+
+
 
 
 /* Buttons (optional for CTAs or nav) */
