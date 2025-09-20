@@ -1279,8 +1279,9 @@ MARKDOWN_EXTENSIONS = [
 # (translatable)
 # EXTRA_HEAD_DATA = ""
 EXTRA_HEAD_DATA = """
-<link rel="stylesheet" type="text/css" href="assets/css/code.css" id="code-theme">
-<script src="assets/js/code-toggle.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/code.css" id="code-theme"> 
+<script src="/assets/js/copy.js" defer></script>
+<script src="/assets/js/code-toggle.js" defer></script>
 """
 
 # Google Analytics or whatever else you use. Added to the bottom of <body>
