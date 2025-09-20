@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ZERO TO DATA</title><link>https://z2d.io/</link><description>This is the official blog ZERO TO DATA (Z2D)</description><atom:link href="https://z2d.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:zerotodata.dev@gmail.com"&gt;Max @ Z2D&lt;/a&gt; </copyright><lastBuildDate>Sat, 20 Sep 2025 12:42:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Polars Arrays: Fast Cosine Similarity for Adjacent Embeddings</title><link>https://z2d.io/posts/polars-cosine-similarity/</link><dc:creator>Max @ Z2D</dc:creator><description>&lt;p&gt;Text streams can shift quickly: a news feed may move from one story to the next, or a tweet stream may switch topics in seconds. Embedding models such as &lt;a href="https://platform.openai.com/docs/guides/embeddings#use-cases"&gt;OpenAI's recent&lt;/a&gt; &lt;code&gt;'text-embedding-3-large'&lt;/code&gt; can convert the nuances of the text into meaningful vector representations. Comparing embeddings of adjacent entries helps flag these shifts — a drop in similarity is often the simplest signal of change.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ZERO TO DATA (Posts about tutorial)</title><link>https://z2d.io/</link><description></description><atom:link href="https://z2d.io/categories/tutorial.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:zerotodata.dev@gmail.com"&gt;Max @ Z2D&lt;/a&gt; </copyright><lastBuildDate>Sat, 20 Sep 2025 12:42:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Polars Arrays: Fast Cosine Similarity for Adjacent Embeddings</title><link>https://z2d.io/posts/polars-cosine-similarity/</link><dc:creator>Max @ Z2D</dc:creator><description>&lt;p&gt;Text streams can shift quickly: a news feed may move from one story to the next, or a tweet stream may switch topics in seconds. Embedding models such as &lt;a href="https://platform.openai.com/docs/guides/embeddings#use-cases"&gt;OpenAI's recent&lt;/a&gt; &lt;code&gt;'text-embedding-3-large'&lt;/code&gt; can convert the nuances of the text into meaningful vector representations. Comparing embeddings of adjacent entries helps flag these shifts — a drop in similarity is often the simplest signal of change.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;  &lt;/p&gt;
 &lt;p&gt;Cosine similarity between consecutive embeddings leveraging &lt;a href="https://docs.pola.rs/user-guide/getting-started/"&gt;Polars&lt;/a&gt;-native syntax (Python Tutorial).  &lt;/p&gt;
@@ -404,35 +404,4 @@ $$&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Make it work → make it pretty → make it fast&lt;/strong&gt;: Create value early on with the approach you can realize the fastest. Improve if you need to.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;prefer vectorized over iterations&lt;/strong&gt;: cast data to &lt;code&gt;pl.Array&lt;/code&gt; for vector and matrix operations for homogeneous and fixed size data&lt;/li&gt;
 &lt;li&gt;Keep computations &lt;strong&gt;explicit and composable&lt;/strong&gt;: it’s easier to reason about, debug, and optimize.&lt;/li&gt;
-&lt;/ul&gt;</description><category>beginner</category><category>data-science</category><category>embeddings</category><category>intermediate</category><category>performance</category><category>polars</category><category>python</category><category>tutorial</category><category>vectorization</category><guid>https://z2d.io/posts/polars-cosine-similarity/</guid><pubDate>Sat, 20 Sep 2025 12:18:00 GMT</pubDate></item><item><title>Hello from Z2D</title><link>https://z2d.io/posts/hello-from-z2d/</link><dc:creator>Max @ Z2D</dc:creator><description>&lt;h2&gt;👋 Hello from Z2D&lt;/h2&gt;
-&lt;p&gt;Welcome to &lt;strong&gt;ZERO TO DATA (Z2D)&lt;/strong&gt; — a space for developers and data enthusiasts who want to level up their skills in Python and data development.&lt;/p&gt;
-&lt;p&gt;I’m Max, a Data Scientist and Pythonista with 10+ years of coding experience and over 6 years working professionally in &lt;strong&gt;data science&lt;/strong&gt; and &lt;strong&gt;machine learning&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3&gt;What you can expect here&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Python best practices&lt;/strong&gt; — writing clean, pythonic, and maintainable code.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Data science &amp;amp; engineering&lt;/strong&gt; — from modern tabular frameworks to graph ML and language models.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Practical tips&lt;/strong&gt; — iterating fast, testing code, and deploying ML models.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Professional workflows&lt;/strong&gt; — IDE configuration, debugging, CI/CD, and modern development practices.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Why I write this blog&lt;/h3&gt;
-&lt;p&gt;My goal is to share knowledge, best practices, and continuous learning — while building a community of people passionate about Python and data.&lt;/p&gt;
-&lt;h3&gt;Stay connected&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Subscribe to the RSS feed&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Follow me on &lt;a href="https://bsky.app/profile/z2d-dev.bsky.social"&gt;Bluesky&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;And soon watch more content on &lt;a href="https://www.youtube.com/@z2d_io"&gt;YouTube&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description><category>hello</category><guid>https://z2d.io/posts/hello-from-z2d/</guid><pubDate>Sun, 14 Sep 2025 11:53:18 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><category>beginner</category><category>data-science</category><category>embeddings</category><category>intermediate</category><category>performance</category><category>polars</category><category>python</category><category>tutorial</category><category>vectorization</category><guid>https://z2d.io/posts/polars-cosine-similarity/</guid><pubDate>Sat, 20 Sep 2025 12:18:00 GMT</pubDate></item></channel></rss>

@@ -822,6 +822,34 @@ pre.code,
   overflow-y: hidden;      /* hide vertical scrollbars */
   -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
 }
+
+/* Position the copy button within Nikola’s .code wrapper */
+div.code { position: relative; }
+
+.copy-button {
+position: absolute;
+top: 10px;
+right: 25px;
+z-index: 5;
+background: #2563EB;
+color: white;
+border: none;
+border-radius: 6px;
+font-size: 0.82em;
+padding: 6px 8px;
+line-height: 1;
+cursor: pointer;
+opacity: 0.9;
+box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+transition: opacity 0.15s ease, transform 0.1s ease;
+}
+.copy-button:hover { opacity: 1; transform: translateY(-1px); }
+.copy-button:active { transform: translateY(0); }
+
+/* Optional: slightly tighter on narrow screens */
+@media (max-width: 640px) {
+.copy-button { top: 8px; right: 8px; }
+}
 /*!
  * baguetteBox.js
  * @author  feimosi
@@ -1322,15 +1350,19 @@ article + article {
 
 
 /* Global Styles */
-body {
+html, body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #FFFFFF, #CBD5E1); /* brand gradient */
-  color: #111827; /* dark neutral */
+  background: #E2E8F0;  /* lighter gray, brand-consistent */
+  color: #111827;       /* dark neutral */
   line-height: 1.7;
   font-size: 16px;
   margin: 0;
   padding: 0;
+  height: 100%;         /* make sure full page fills bg */
 }
+
+
+
 
 /* Header section separation */
 header {
@@ -1393,44 +1425,89 @@ a:hover {
 }
 
 /* Navigation */
-
-/* Navigation */
-.navbar {
-  margin-top: 0.5em;
-  margin-bottom: 1em;       /* tighten whitespace */
-  font-weight: 600;
-  color: #475569;           /* slate-600 for softer look */
+.navbar,
+.navbar-default {
+  background-color: #E2E8F0 !important;  /* same as page background */
+  border: none !important;              /* removes default Bootstrap line */
+  box-shadow: none !important;          /* removes drop shadows */
+}
+.navbar a {
+  color: #334155;       /* slate-700 for default links */
+  text-decoration: none;
 }
 .navbar a:hover {
-  color: #2563EB;
+  color: #2563EB;       /* brand blue */
 }
+
 
 /* Inline Code */
 code {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.95em;
   color: #14B8A6; 
-  background-color: #F1F5F9; 
+  background-color: #F8FAFC; 
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-/* Blockquotes */
+/* Blockquotes & Admonitions */
+.admonition,
 blockquote {
   background: rgba(37, 99, 235, 0.05); /* faint brand blue */
-  border-left: 3px solid #2563EB;
+  border-left: 3px solid #2563EB;      /* brand blue border */
   padding: 14px 18px;
   margin: 28px 0;
   color: #1E293B;
   font-style: normal;
   border-radius: 6px;
+
+  font-size: 1em !important;           /* match body exactly */
+  line-height: 1.6;
 }
-blockquote strong {
-  color: #F97316; /* orange for emphasis */
+
+/* Reset inner paragraphs and list items */
+.admonition p,
+.admonition li,
+blockquote p,
+blockquote li {
+  font-size: 1em !important;
+  line-height: 1.6;
+  margin: 0.4em 0;
 }
-blockquote em {
-  color: #14B8A6; /* teal for softer highlight */
+/* Tighten list spacing inside admonitions/quotes */
+.admonition ul,
+blockquote ul {
+  margin: 0.2em 0 0.2em 1.2em; /* top/bottom space reduced */
+  padding-left: 1.2em;         /* keep bullet indentation */
 }
+
+.admonition li,
+blockquote li {
+  margin: 0.15em 0;             /* smaller gap between list items */
+  line-height: 1.5;            /* slightly more compact */
+}
+/* Admonition title (e.g. TL;DR) */
+.admonition-title {
+  font-size: 0.95em;                   /* slightly smaller */
+  font-weight: 600;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+  color: #F97316;                      /* orange for emphasis */
+}
+
+/* Highlights inside blockquotes/admonitions */
+blockquote strong,
+.admonition strong {
+  color: #F97316;                      /* orange for strong emphasis */
+}
+
+blockquote em,
+.admonition em {
+  color: #14B8A6;                      /* teal for softer highlight */
+}
+
+
+
 
 /* Buttons (optional for CTAs or nav) */
 .button, .btn {
