@@ -343,9 +343,10 @@ def cosine_adjacent_vectorized(
             # convert both embedding columns to array this allows vectorized operations
             # in the the following with_columns section
             [
-                pl.col("_current_em")
-                .list.to_array(embedding_length)
-                .alias("_current_em"),
+                # convert current embedding
+                pl.col("_current_em").list.to_array(embedding_length).alias("_current_em"),
+
+                # convert next embedding
                 pl.col("_next_em").list.to_array(embedding_length).alias("_next_em"),
             ]
         )
@@ -381,7 +382,7 @@ def cosine_adjacent_vectorized(
             # 4) cosine similarity calculation
             [
                 # plug in the precomputed values
-                (pl.col("_dot") / (pl.col("_current_norm") * pl.col("_next_norm")))
+                ( pl.col("_dot") / (pl.col("_current_norm") * pl.col("_next_norm")) )
                 .cast(out_dtype)
                 .alias("cosine_similarity")
             ]
